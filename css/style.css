@@ -54,6 +54,7 @@
   animation-name: move;
   animation-duration: 20s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 @keyframes move {
   100% {
