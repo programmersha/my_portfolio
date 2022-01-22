@@ -84,3 +84,21 @@
   font-size: 16px;
   line-height: 30px;
 }
+
+@media (max-height: 533px) {
+  .poem {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @keyframes move {
+    0% {
+      margin-top: -10%;
+      margin-left: 0%;
+    }
+  
+    100% {
+      margin-top: -30%;
+      margin-left: 99%;
+    }
+  }
+}
