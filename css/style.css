@@ -46,7 +46,7 @@
   }
 }
 .airplane img {
-  width: 200px;
+  width: 150px;
 }
 .airplane {
   margin-top: 25%;
@@ -103,5 +103,8 @@
   }
   .airplane img {
     width: 80px;
+  }
+  .text {
+    margin-top: -5%;
   }
 }
