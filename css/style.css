@@ -45,7 +45,13 @@
     opacity: 0.5;
   }
 }
+
+h1 {
+  font-weight: 500;
+}
 .airplane img {
+  max-width: 100%;
+  height: auto;
   width: 150px;
 }
 .airplane {
@@ -56,6 +62,15 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
+audio {
+  position: absolute;
+  width: 300px;
+  height: 54px;
+  right: 2%;
+  bottom: 5%;
+}
+
 @keyframes move {
   0% {
     margin-top: 0%;
@@ -85,10 +100,19 @@
   line-height: 30px;
 }
 
-@media (max-height: 533px) {
+@media (max-width: 913px) {
+  .text {
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 415px) {
+  .text {
+    margin-top: 20%;
+  }
   .poem {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 30px;
   }
   @keyframes move {
     0% {
@@ -104,7 +128,24 @@
   .airplane img {
     width: 80px;
   }
+  
+}
+ @media (max-height: 415px) {
   .text {
-    margin-top: -5%;
+    margin-top: 0%;
+  }
+  .poem {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  audio {
+    width: 220px;
+    height: 30px;
+    bottom: 2%;
+  }
+} 
+@media (max-height: 280px){
+  .text {
+    margin-top: -10%;
   }
 }
