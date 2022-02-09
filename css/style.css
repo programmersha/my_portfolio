@@ -70,6 +70,24 @@ audio {
   right: 2%;
   bottom: 5%;
 }
+.portfolio {
+  position: absolute;
+  top: 100px;
+  right: 20%;
+  z-index: 10;
+  
+}
+.content__item {
+  padding: 30px 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 20px;
+}
+.content__item a{
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
 
 @keyframes move {
   0% {
@@ -105,15 +123,13 @@ audio {
     margin-top: 15%;
   }
 }
+@media(max-width:770px){
+  .text {
+    display: none;
+  }
+}
 
 @media (max-width: 415px) {
-  .text {
-    margin-top: 20%;
-  }
-  .poem {
-    font-size: 16px;
-    line-height: 30px;
-  }
   @keyframes move {
     0% {
       margin-top: -10%;
@@ -131,21 +147,10 @@ audio {
   
 }
  @media (max-height: 415px) {
-  .text {
-    margin-top: 0%;
-  }
-  .poem {
-    font-size: 16px;
-    line-height: 20px;
-  }
   audio {
     width: 220px;
     height: 30px;
     bottom: 2%;
   }
 } 
-@media (max-height: 280px){
-  .text {
-    margin-top: -10%;
-  }
-}
+
