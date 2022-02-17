@@ -1,4 +1,6 @@
-
+a {
+  cursor: pointer;
+}
 .container {
   position: fixed;
   padding: 0;
