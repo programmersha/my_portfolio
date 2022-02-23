@@ -54,6 +54,9 @@ button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
+a{
+  cursor: pointer;
+}
 a,
 a:visited {
   text-decoration: none;
