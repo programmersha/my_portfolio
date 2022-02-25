@@ -54,9 +54,6 @@ button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-a{
-  cursor: pointer;
-}
 a,
 a:visited {
   text-decoration: none;
@@ -186,23 +183,13 @@ body{
 .main-block {
   position: relative;
 }
-.page__main-block {
-}
+
 .page__services {
   position: relative;
   margin: -111px 0 0 0;
   z-index: 2;
 }
-.page__ad {
-}
-.page__advices {
-}
-.page__we {
-}
-.page__clients {
-}
-.page__contacts {
-}
+
 /*  ------------------------------------  */
 .header-block {
   text-align: center;
@@ -251,13 +238,14 @@ body{
   display: flex;
   justify-content: center;
   align-items:center;
-  background: #FF7B47;
+  background: transparent;
   border-radius: 37px;
   padding: 5px 36px;
   margin-right: 10px;
   min-height: 48px;
   text-align: center;
-  color:#ffffff;
+  color:#0D5C63;
+  border: 1px solid;
   letter-spacing: 0.2px;
   font-weight: 700;
   line-height: 200%;
@@ -265,10 +253,10 @@ body{
 .main-block__button:last-child {
   margin-right: 0;
 }
-.main-block__button_border {
-  background: transparent;
-  color: #0D5C63;
-  border: 1px solid
+.main-block__button:hover {
+  background: #FF7B47;
+  color: #ffffff;
+  border: none;
 }
 .main-block__image{
   position: absolute;
@@ -311,10 +299,8 @@ body{
 }
 /*--------------------------------------------*/
 
-.services {
-}
-.services__container {
-}
+
+
 .services__body {
   display: flex;
   flex-wrap: wrap;
@@ -324,6 +310,10 @@ body{
   padding: 0 15px;
   flex: 0 1 33.333%;
 }
+.services__column a{
+  display: block;
+}
+
 @media(max-width: 992px){
   .services__column {
     flex: 0 1 50%;
@@ -345,8 +335,7 @@ body{
 .item-service > *:not(:last-child) {
   margin: 0 0 10px 0;
 }
-.item-servise__icon {
-}
+
 .item-servise__title {
   font-weight: bold;
   font-size: 24px;
@@ -525,8 +514,7 @@ body{
 .we {
   padding: 80px 0 130px 0;
 }
-.we__container {
-}
+
 .we__header {
   margin: 0 0 100px 0;
 }
@@ -560,11 +548,7 @@ body{
 .we__title:not(:last-child) {
   margin-bottom: 10px;
 }
-.we__text {
 
-}
-.we__items {
-}
 .we__top:not(:last-child) {
   margin-bottom: 50px;
 }
@@ -589,12 +573,20 @@ body{
 .item-we__title:not(:last-child) {
   margin-bottom: 5px;
 }
-.item-we__text {    /* скрыли большой текст */
+.item-we__text {   
+  cursor: pointer; 
   line-height: 1.42;
-  white-space: nowrap;
   width: 225px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow: hidden; /* скрыли большой текст */
+  white-space: nowrap; /*текст не ломается*/
+  text-overflow: ellipsis;  /*...в конце*/
+}
+.we__text-visible{
+  height: auto;
+  overflow: visible; 
+  white-space: normal; 
+  text-overflow: unset;  
+  margin-bottom: 15px;
 }
 @media(max-width:1100px){
   .we {
@@ -635,14 +627,6 @@ body{
 
 /*-------------------------------------------*/
 
-
-.clients {
-
-}
-.clients__container {
-}
-._container {
-}
 .clients__top {
   padding: 35px 0;
   text-align: center;
@@ -670,9 +654,7 @@ body{
   }
 }
 /*----------------------------------------*/
-.form {
 
-}
 .form__body {
   display: flex;
   justify-content: space-between;
@@ -716,6 +698,7 @@ body{
   background-color: #FF7B47;
   color: #FFFFFF;
   border-radius: 0 3px 3px 0;
+  cursor: pointer;
 }
 @media (max-width:950px){
   .form__body {
@@ -749,10 +732,7 @@ body{
 .contacts__header {
   margin-bottom: 80px;
 }
-.contacts__container {
-}
-.contacts__header {
-}
+
 .contacts__body {
   display: flex;
   flex-wrap: wrap;
@@ -802,6 +782,7 @@ body{
   color: #FF7B47;
   
 }
+
 .contacts__item-dark {
   padding: 80px 50px;
   margin: 0;
@@ -841,17 +822,14 @@ body{
   }
 }
 /*-----------------------------------------------*/
-.footer {
-}
+
 .footer__top {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 40px 0;
 }
-.top__left {
 
-}
 .top__title {
   font-weight: 700;
   font-size: 24px;
@@ -878,6 +856,7 @@ body{
   text-align: center;
   color: #FFFFFF;
 }
+
 @media(max-width:500px) {
   .footer__top {
     display: block;
@@ -907,6 +886,7 @@ body{
 .main__columns {
   display: flex;
   justify-content: space-between;
+  width: 91%;
 }
 .main__col {
   padding-top: 20px;
@@ -964,8 +944,7 @@ body{
       color: #FF7B47;
   }
 }
-.footer__bottom {
-}
+
 .bottom__body {
   display: flex;
   flex-wrap: wrap;
@@ -982,10 +961,7 @@ body{
 }
 .bottom__right img {
   vertical-align: middle;
-  margin-right: 20px;
-}
-.bottom__right img:last-child {
-  margin-right: 0;
+  margin-right: 15px;
 }
 @media(max-width:768px) {
   .bottom__right, .bottom__left {
