@@ -56,7 +56,7 @@ for (let i=0; i<3; i++){
     buttonA.style.color = 'white';
     imgCont.src = 'img/contacts/' + 'contacts' + (i + 1) + 'white.svg';
     contact.style.background = "#252B42";
-    contact.style.padding = "80px 50px";
+    contact.style.padding = "80px 0px";
     contact.style.margin = "0px";
     contact.style.transition = "0.8s";
   }
